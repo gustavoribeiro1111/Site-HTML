@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFE6E0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: '🦟';
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.1;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background: #27AE60;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: #229954;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções */
+.secao {
+    padding: 60px 20px;
+}
+
+.secao h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2C3E50;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.secao h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #E74C3C;
+    border-radius: 2px;
+}
+
+/* Dengue Section */
+.dengue-section {
+    background: #F8F9FA;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #E74C3C;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Água Parada Section */
+.agua-parada-section {
+    background: linear-gradient(135deg, #ECF0F1 0%, #BDC3C7 100%);
+}
+
+.agua-parada-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.agua-parada-content .texto h3 {
+    color: #E74C3C;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.agua-parada-content .texto h4 {
+    color: #2C3E50;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.agua-parada-content ul {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.agua-parada-content li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.agua-parada-content li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27AE60;
+    font-weight: bold;
+}
+
+.ilustracao {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-agua {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.mosquito-icon {
+    font-size: 3rem;
+    display: block;
+    animation: buzz 0.5s ease-in-out infinite;
+}
+
+@keyframes buzz {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+/* Riscos Section */
+.riscos-section {
+    background: #F8F9FA;
+}
+
+.riscos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.risco-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #E74C3C;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.risco-card:hover {
+    transform: translateX(5px);
+}
+
+.risco-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.risco-card h3 {
+    color: #E74C3C;
+    margin-bottom: 0.5rem;
+}
+
+/* Prevenção Section */
+.prevencao-section {
+    background: linear-gradient(135deg, #F5F7FA 0%, #E8EEF5 100%);
+}
+
+.prevencao-lista {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.prevencao-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.prevencao-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.numero {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.prevencao-item h3 {
+    color: #E74C3C;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Dicas Section */
+.dicas-section {
+    background: #F8F9FA;
+}
+
+.dicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.dica {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dica:hover {
+    transform: scale(1.05);
+}
+
+.dica-emoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.dica h3 {
+    color: #27AE60;
+    margin-bottom: 0.5rem;
+}
+
+/* Emergência Section */
+.emergencia-section {
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    padding: 40px 20px;
+}
+
+.emergencia-section h2 {
+    color: white;
+}
+
+.emergencia-section .container h2::after {
+    background: white;
+}
+
+.emergencia-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.emergencia-box p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.btn-emergencia {
+    background: #E74C3C;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-emergencia:hover {
+    background: #C0392B;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .agua-parada-content {
+        grid-template-columns: 1fr;
+    }
+
+    .prevencao-item {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .numero {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .secao h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .secao {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .prevencao-item {
+        grid-template-columns: 1fr;
+    }
+
+    .numero {
+        margin-bottom: 1rem;
+    }
+}
