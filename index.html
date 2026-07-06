@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengue - Não Deixe Água Parada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🦟 Dengue Alert</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#dengue">Sobre Dengue</a></li>
+                <li><a href="#agua-parada">Água Parada</a></li>
+                <li><a href="#prevencao">Prevenção</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Não Deixe Água Parada!</h1>
+            <p>Previna a Dengue em sua casa e comunidade</p>
+            <button class="btn-primary" onclick="document.getElementById('dengue').scrollIntoView({behavior: 'smooth'})">
+                Saiba Mais
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção: O que é Dengue -->
+    <section id="dengue" class="secao dengue-section">
+        <div class="container">
+            <h2>O que é Dengue?</h2>
+            <div class="content-grid">
+                <div class="card">
+                    <div class="card-icon">🦟</div>
+                    <h3>Transmissão</h3>
+                    <p>A dengue é transmitida pelo mosquito Aedes aegypti através da picada de fêmeas infectadas. O vírus se desenvolve no mosquito e é passado através da saliva.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>Sintomas</h3>
+                    <p>Febre alta (39-40°C), dores no corpo, nas articulações, cabeça e atrás dos olhos, além de erupções cutâneas. Geralmente aparecem 3 a 14 dias após a infecção.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏥</div>
+                    <h3>Gravidade</h3>
+                    <p>Pode evoluir para dengue hemorrágica, que é potencialmente fatal. Não existe vacina para todos os soropos, por isso a prevenção é fundamental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Água Parada -->
+    <section id="agua-parada" class="secao agua-parada-section">
+        <div class="container">
+            <h2>Por que Água Parada é Perigosa?</h2>
+            <div class="agua-parada-content">
+                <div class="texto">
+                    <h3>O Problema</h3>
+                    <p>O mosquito Aedes aegypti coloca seus ovos em água parada. Um único recipiente com água parada pode se tornar o lar de centenas ou milhares de larvas de mosquitos.</p>
+                    
+                    <h4>Ciclo de Vida do Mosquito:</h4>
+                    <ul>
+                        <li><strong>Ovo:</strong> Colocados em água parada (3-4 dias)</li>
+                        <li><strong>Larva:</strong> Vive apenas em água (7-10 dias)</li>
+                        <li><strong>Pupa:</strong> Fase intermediária (2-3 dias)</li>
+                        <li><strong>Adulto:</strong> Voa e transmite o vírus (30-60 dias)</li>
+                    </ul>
+                </div>
+                <div class="imagem-parada">
+                    <div class="ilustracao">
+                        <span class="item-agua">💧</span>
+                        <span class="mosquito-icon">🦟</span>
+                        <p style="text-align: center; margin-top: 20px;">Água parada = Habitat ideal para mosquitos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Locais de Risco -->
+    <section id="riscos" class="secao riscos-section">
+        <div class="container">
+            <h2>Locais Onde Água Parada se Acumula</h2>
+            <div class="riscos-grid">
+                <div class="risco-card">
+                    <div class="risco-emoji">🪣</div>
+                    <h3>Baldes e Recipientes</h3>
+                    <p>Baldes, latas e garrafas abertas acumulam água da chuva</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-emoji">🪀</div>
+                    <h3>Brinquedos</h3>
+                    <p>Brinquedos deixados no pátio podem virar pequenos reservatórios</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-emoji">🪴</div>
+                    <h3>Vasos de Plantas</h3>
+                    <p>Pratinhos dos vasos são perfeitos para água acumular</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-emoji">🛞</div>
+                    <h3>Pneus Velhos</h3>
+                    <p>Pneus abandonados criam poças de água inevitavelmente</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-emoji">🚿</div>
+                    <h3>Ralos e Canaletas</h3>
+                    <p>Entupimento causa acúmulo de água em poços e ralos</p>
+                </div>
+                <div class="risco-card">
+                    <div class="risco-emoji">🪟</div>
+                    <h3>Ar Condicionado</h3>
+                    <p>Drenos de ar condicionado podem criar pequenas poças</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Prevenção -->
+    <section id="prevencao" class="secao prevencao-section">
+        <div class="container">
+            <h2>Como Prevenir Dengue</h2>
+            <div class="prevencao-lista">
+                <div class="prevencao-item">
+                    <div class="numero">1</div>
+                    <div class="conteudo">
+                        <h3>Elimine Água Parada</h3>
+                        <p>Verifique diariamente se há acúmulo de água em sua casa e quintal. Despeje toda a água parada.</p>
+                    </div>
+                </div>
+                <div class="prevencao-item">
+                    <div class="numero">2</div>
+                    <div class="conteudo">
+                        <h3>Guarde Recipientes Vazios</h3>
+                        <p>Coloque baldes, latas e garrafas vazias em local coberto ou de cabeça para baixo.</p>
+                    </div>
+                </div>
+                <div class="prevencao-item">
+                    <div class="numero">3</div>
+                    <div class="conteudo">
+                        <h3>Mantenha Caixa D'água Fechada</h3>
+                        <p>A caixa d'água deve estar sempre fechada e bem vedada. Verifique regularmente.</p>
+                    </div>
+                </div>
+                <div class="prevencao-item">
+                    <div class="numero">4</div>
+                    <div class="conteudo">
+                        <h3>Limpe Calhas e Canaletas</h3>
+                        <p>Mantenha as calhas de telhado limpas para evitar acúmulo de água.</p>
+                    </div>
+                </div>
+                <div class="prevencao-item">
+                    <div class="numero">5</div>
+                    <div class="conteudo">
+                        <h3>Trocar Água de Vasos</h3>
+                        <p>Lave os vasos com água e escova regularmente. Use terra seca ou areia.</p>
+                    </div>
+                </div>
+                <div class="prevencao-item">
+                    <div class="numero">6</div>
+                    <div class="conteudo">
+                        <h3>Use Telas de Proteção</h3>
+                        <p>Instale telas em janelas e portas para impedir a entrada de mosquitos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Dicas Práticas -->
+    <section id="dicas" class="secao dicas-section">
+        <div class="container">
+            <h2>Dicas Práticas para o Dia a Dia</h2>
+            <div class="dicas-grid">
+                <div class="dica">
+                    <span class="dica-emoji">📋</span>
+                    <h3>Inspecione Regularmente</h3>
+                    <p>Faça inspeção semanal de sua casa procurando por água parada</p>
+                </div>
+                <div class="dica">
+                    <span class="dica-emoji">👨‍👩‍👧‍👦</span>
+                    <h3>Conscientize a Família</h3>
+                    <p>Todos na casa devem conhecer os riscos e se responsabilizar</p>
+                </div>
+                <div class="dica">
+                    <span class="dica-emoji">🌱</span>
+                    <h3>Mantenha Terreno Limpo</h3>
+                    <p>Remova lixo que possa acumular água como pneus e garrafas</p>
+                </div>
+                <div class="dica">
+                    <span class="dica-emoji">🏘️</span>
+                    <h3>Comunique aos Vizinhos</h3>
+                    <p>Alertar a comunidade também ajuda na prevenção coletiva</p>
+                </div>
+                <div class="dica">
+                    <span class="dica-emoji">🔍</span>
+                    <h3>Procure por Larvas</h3>
+                    <p>Se ver larvas (minhocas pequenas em água), avise a secretaria de saúde</p>
+                </div>
+                <div class="dica">
+                    <span class="dica-emoji">☀️</span>
+                    <h3>Exponha ao Sol</h3>
+                    <p>Deixe potinhos de plantas no sol seco para evitar desenvolvimento de larvas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Emergência -->
+    <section class="secao emergencia-section">
+        <div class="container">
+            <h2>Se você tiver Sintomas</h2>
+            <div class="emergencia-box">
+                <p>Se apresentar febre alta, dores no corpo ou atrás dos olhos, procure imediatamente um posto de saúde ou hospital mais próximo.</p>
+                <button class="btn-emergencia" onclick="alert('Ligue para 192 (SAMU) ou dirija-se ao pronto-socorro mais próximo')">
+                    🚑 Procurar Ajuda Médica
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dengue Alert - Prevenção é o melhor remédio!</p>
+            <p>Saúde Pública em Foco</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
