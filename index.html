@@ -3,238 +3,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dengue - Não Deixe Água Parada</title>
+    <title>Dengue Alert - Prevenção Profissional de Dengue</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- ============== NAVBAR ============== -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>🦟 Dengue Alert</h1>
+                <i class="fas fa-mosquito"></i>
+                <span>Dengue Alert</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#dengue">Sobre Dengue</a></li>
-                <li><a href="#agua-parada">Água Parada</a></li>
-                <li><a href="#prevencao">Prevenção</a></li>
-                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="#riscos"><i class="fas fa-exclamation-triangle"></i> Riscos</a></li>
+                <li><a href="#prevencao"><i class="fas fa-shield-alt"></i> Prevenção</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <!-- Banner Principal -->
-    <section id="home" class="banner">
-        <div class="banner-content">
-            <h1>Não Deixe Água Parada!</h1>
-            <p>Previna a Dengue em sua casa e comunidade</p>
-            <button class="btn-primary" onclick="document.getElementById('dengue').scrollIntoView({behavior: 'smooth'})">
-                Saiba Mais
-            </button>
-        </div>
-    </section>
-
-    <!-- Seção: O que é Dengue -->
-    <section id="dengue" class="secao dengue-section">
-        <div class="container">
-            <h2>O que é Dengue?</h2>
-            <div class="content-grid">
-                <div class="card">
-                    <div class="card-icon">🦟</div>
-                    <h3>Transmissão</h3>
-                    <p>A dengue é transmitida pelo mosquito Aedes aegypti através da picada de fêmeas infectadas. O vírus se desenvolve no mosquito e é passado através da saliva.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">⚠️</div>
-                    <h3>Sintomas</h3>
-                    <p>Febre alta (39-40°C), dores no corpo, nas articulações, cabeça e atrás dos olhos, além de erupções cutâneas. Geralmente aparecem 3 a 14 dias após a infecção.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🏥</div>
-                    <h3>Gravidade</h3>
-                    <p>Pode evoluir para dengue hemorrágica, que é potencialmente fatal. Não existe vacina para todos os soropos, por isso a prevenção é fundamental.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção: Água Parada -->
-    <section id="agua-parada" class="secao agua-parada-section">
-        <div class="container">
-            <h2>Por que Água Parada é Perigosa?</h2>
-            <div class="agua-parada-content">
-                <div class="texto">
-                    <h3>O Problema</h3>
-                    <p>O mosquito Aedes aegypti coloca seus ovos em água parada. Um único recipiente com água parada pode se tornar o lar de centenas ou milhares de larvas de mosquitos.</p>
-                    
-                    <h4>Ciclo de Vida do Mosquito:</h4>
-                    <ul>
-                        <li><strong>Ovo:</strong> Colocados em água parada (3-4 dias)</li>
-                        <li><strong>Larva:</strong> Vive apenas em água (7-10 dias)</li>
-                        <li><strong>Pupa:</strong> Fase intermediária (2-3 dias)</li>
-                        <li><strong>Adulto:</strong> Voa e transmite o vírus (30-60 dias)</li>
-                    </ul>
-                </div>
-                <div class="imagem-parada">
-                    <div class="ilustracao">
-                        <span class="item-agua">💧</span>
-                        <span class="mosquito-icon">🦟</span>
-                        <p style="text-align: center; margin-top: 20px;">Água parada = Habitat ideal para mosquitos</p>
+    <!-- ============== HERO BANNER ============== -->
+    <section id="home" class="hero-banner">
+        <div class="stars"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Combata a Dengue</h1>
+                <p class="subtitle">Não deixe água parada - Previna e Proteja sua Família</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1.6M+</span>
+                        <span class="stat-label">Casos/Ano</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">40%</span>
+                        <span class="stat-label">Redução Possível</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Prevenível</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção: Locais de Risco -->
-    <section id="riscos" class="secao riscos-section">
-        <div class="container">
-            <h2>Locais Onde Água Parada se Acumula</h2>
-            <div class="riscos-grid">
-                <div class="risco-card">
-                    <div class="risco-emoji">🪣</div>
-                    <h3>Baldes e Recipientes</h3>
-                    <p>Baldes, latas e garrafas abertas acumulam água da chuva</p>
-                </div>
-                <div class="risco-card">
-                    <div class="risco-emoji">🪀</div>
-                    <h3>Brinquedos</h3>
-                    <p>Brinquedos deixados no pátio podem virar pequenos reservatórios</p>
-                </div>
-                <div class="risco-card">
-                    <div class="risco-emoji">🪴</div>
-                    <h3>Vasos de Plantas</h3>
-                    <p>Pratinhos dos vasos são perfeitos para água acumular</p>
-                </div>
-                <div class="risco-card">
-                    <div class="risco-emoji">🛞</div>
-                    <h3>Pneus Velhos</h3>
-                    <p>Pneus abandonados criam poças de água inevitavelmente</p>
-                </div>
-                <div class="risco-card">
-                    <div class="risco-emoji">🚿</div>
-                    <h3>Ralos e Canaletas</h3>
-                    <p>Entupimento causa acúmulo de água em poços e ralos</p>
-                </div>
-                <div class="risco-card">
-                    <div class="risco-emoji">🪟</div>
-                    <h3>Ar Condicionado</h3>
-                    <p>Drenos de ar condicionado podem criar pequenas poças</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção: Prevenção -->
-    <section id="prevencao" class="secao prevencao-section">
-        <div class="container">
-            <h2>Como Prevenir Dengue</h2>
-            <div class="prevencao-lista">
-                <div class="prevencao-item">
-                    <div class="numero">1</div>
-                    <div class="conteudo">
-                        <h3>Elimine Água Parada</h3>
-                        <p>Verifique diariamente se há acúmulo de água em sua casa e quintal. Despeje toda a água parada.</p>
-                    </div>
-                </div>
-                <div class="prevencao-item">
-                    <div class="numero">2</div>
-                    <div class="conteudo">
-                        <h3>Guarde Recipientes Vazios</h3>
-                        <p>Coloque baldes, latas e garrafas vazias em local coberto ou de cabeça para baixo.</p>
-                    </div>
-                </div>
-                <div class="prevencao-item">
-                    <div class="numero">3</div>
-                    <div class="conteudo">
-                        <h3>Mantenha Caixa D'água Fechada</h3>
-                        <p>A caixa d'água deve estar sempre fechada e bem vedada. Verifique regularmente.</p>
-                    </div>
-                </div>
-                <div class="prevencao-item">
-                    <div class="numero">4</div>
-                    <div class="conteudo">
-                        <h3>Limpe Calhas e Canaletas</h3>
-                        <p>Mantenha as calhas de telhado limpas para evitar acúmulo de água.</p>
-                    </div>
-                </div>
-                <div class="prevencao-item">
-                    <div class="numero">5</div>
-                    <div class="conteudo">
-                        <h3>Trocar Água de Vasos</h3>
-                        <p>Lave os vasos com água e escova regularmente. Use terra seca ou areia.</p>
-                    </div>
-                </div>
-                <div class="prevencao-item">
-                    <div class="numero">6</div>
-                    <div class="conteudo">
-                        <h3>Use Telas de Proteção</h3>
-                        <p>Instale telas em janelas e portas para impedir a entrada de mosquitos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção: Dicas Práticas -->
-    <section id="dicas" class="secao dicas-section">
-        <div class="container">
-            <h2>Dicas Práticas para o Dia a Dia</h2>
-            <div class="dicas-grid">
-                <div class="dica">
-                    <span class="dica-emoji">📋</span>
-                    <h3>Inspecione Regularmente</h3>
-                    <p>Faça inspeção semanal de sua casa procurando por água parada</p>
-                </div>
-                <div class="dica">
-                    <span class="dica-emoji">👨‍👩‍👧‍👦</span>
-                    <h3>Conscientize a Família</h3>
-                    <p>Todos na casa devem conhecer os riscos e se responsabilizar</p>
-                </div>
-                <div class="dica">
-                    <span class="dica-emoji">🌱</span>
-                    <h3>Mantenha Terreno Limpo</h3>
-                    <p>Remova lixo que possa acumular água como pneus e garrafas</p>
-                </div>
-                <div class="dica">
-                    <span class="dica-emoji">🏘️</span>
-                    <h3>Comunique aos Vizinhos</h3>
-                    <p>Alertar a comunidade também ajuda na prevenção coletiva</p>
-                </div>
-                <div class="dica">
-                    <span class="dica-emoji">🔍</span>
-                    <h3>Procure por Larvas</h3>
-                    <p>Se ver larvas (minhocas pequenas em água), avise a secretaria de saúde</p>
-                </div>
-                <div class="dica">
-                    <span class="dica-emoji">☀️</span>
-                    <h3>Exponha ao Sol</h3>
-                    <p>Deixe potinhos de plantas no sol seco para evitar desenvolvimento de larvas</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção: Emergência -->
-    <section class="secao emergencia-section">
-        <div class="container">
-            <h2>Se você tiver Sintomas</h2>
-            <div class="emergencia-box">
-                <p>Se apresentar febre alta, dores no corpo ou atrás dos olhos, procure imediatamente um posto de saúde ou hospital mais próximo.</p>
-                <button class="btn-emergencia" onclick="alert('Ligue para 192 (SAMU) ou dirija-se ao pronto-socorro mais próximo')">
-                    🚑 Procurar Ajuda Médica
+                <button class="btn-cta" onclick="document.getElementById('sobre').scrollIntoView({behavior: 'smooth'})">
+                    <span>Descubra Como Prevenir</span>
+                    <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-droplet"></i>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ============== SOBRE DENGUE ============== -->
+    <section id="sobre" class="secao sobre-dengue">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entenda a Dengue</h2>
+                <p>Informações essenciais sobre a doença</p>
+            </div>
+            <div class="grid-3">
+                <div class="info-card card-transmissao">
+                    <div class="card-header">
+                        <i class="fas fa-virus"></i>
+                        <h3>Transmissão</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>O mosquito <strong>Aedes aegypti</strong> transmite o vírus através de sua picada. Apenas fêmeas infectadas transmitem a doença durante toda sua vida.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Picada de mosquito infectado</li>
+                            <li><i class="fas fa-check"></i> Vírus passa pela saliva</li>
+                            <li><i class="fas fa-check"></i> Sem contágio pessoa a pessoa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-card card-sintomas">
+                    <div class="card-header">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Sintomas</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Os sintomas aparecem geralmente de <strong>3 a 14 dias</strong> após a infecção.</p>
+                        <ul class="symptom-list">
+                            <li><span class="fever">39-40°C</span> Febre alta repentina</li>
+                            <li><span class="pain">Dor</span> Cabeça, corpo e articulações</li>
+                            <li><span class="rash">Vermelhidão</span> Erupções na pele</li>
+                            <li><span class="eyes">Dor</span> Atrás dos olhos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-card card-gravidade">
+                    <div class="card-header">
+                        <i class="fas fa-hospital"></i>
+                        <h3>Complicações</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>A dengue pode evoluir para formas mais graves e potencialmente fatais.</p>
+                        <div class="severity-indicator">
+                            <div class="severity-level severe">
+                                <span class="level-name">Dengue Hemorrágica</span>
+                                <span class="level-desc">Risco de vida</span>
+                            </div>
+                            <div class="severity-level critical">
+                                <span class="level-name">Síndrome do Choque</span>
+                                <span class="level-desc">Crítico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== CICLO DO MOSQUITO ============== -->
+    <section class="secao ciclo-mosquito">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ciclo de Vida do Mosquito Aedes</h2>
+                <p>Conheça as 4 fases do desenvolvimento</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4>Ovo</h4>
+                        <p>Colocados em água parada</p>
+                        <span class="duration">3-4 dias</span>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4>Larva</h4>
+                        <p>Vive exclusivamente em água</p>
+                        <span class="duration">7-10 dias</span>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4>Pupa</h4>
+                        <p>Fase de transformação</p>
+                        <span class="duration">2-3 dias</span>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4>Adulto</h4>
+                        <p>Transmite o vírus</p>
+                        <span class="duration">30-60 dias</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== LOCAIS DE RISCO ============== -->
+    <section id="riscos" class="secao locais-risco">
+        <div class="container">
+            <div class="section-header">
+                <h2>Locais de Risco</h2>
+                <p>Onde a água parada mais se acumula</p>
+            </div>
+            <div class="risk-grid">
+                <div class="risk-item">
+                    <div class="risk-icon"><i class="fas fa-bucket"></i></div>
+                    <h4>Baldes e Recipientes</h4>
+                    <p>Guardar baldes de cabeça para baixo</p>
+                    <div class="risk-level">Risco: Alto</div>
+                </div>
+
+                <div class="risk-item">
+                    <div class="risk-icon"><i class="fas fa-toys"></i></div>
+                    <h4>Brinquedos</h4>
+                    <p>Guardar brinquedos em local coberto</p>
+                    <div class="risk-level">Risco: Alto</div>
+                </div>
+
+                <div class="risk-item">
+                    <div class="risk-icon"><i class="fas fa-flower"></i></div>
+                    <h4>Vasos de Plantas</h4>
+                    <p>Trocar água regularmente</p>
+                    <div class="risk-level">Risco: Médio</div>
+                </div>
+
+                <div class="risk-item">
+                    <div class="risk-icon"><i class="fas fa-tire"></i></div>
+                    <h4>Pneus Velhos</h4>
+                    <p>Descartar adequadamente</p>
+                    <div class="risk-level">Risco: Alto</div>
+                </div>
+
+                <div class="risk-item">
+                    <div class="risk-icon"><i class="fas fa-water"></i></div>
+                    <h4>Ralos e Canaletas</h4>
+                    <p>Manter limpas e desobstruídas</p>
+                    <div class="risk-level">Risco: Médio</div>
+                </div>
+
+                <div class="risk-item">
+                    <div class="risk-icon"><i class="fas fa-fan"></i></div>
+                    <h4>Ar Condicionado</h4>
+                    <p>Verificar drenos regularmente</p>
+                    <div class="risk-level">Risco: Baixo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== GUIA DE PREVENÇÃO ============== -->
+    <section id="prevencao" class="secao guia-prevencao">
+        <div class="container">
+            <div class="section-header">
+                <h2>Guia Completo de Prevenção</h2>
+                <p>6 passos essenciais para proteger sua casa</p>
+            </div>
+            <div class="prevention-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-search"></i> Inspecione Diariamente</h3>
+                        <p>Procure por água acumulada em sua casa e quintal. Despeje toda a água parada encontrada imediatamente.</p>
+                        <div class="checklist">
+                            <label><input type="checkbox"> Telhado e calhas</label>
+                            <label><input type="checkbox"> Vasos de plantas</label>
+                            <label><input type="checkbox"> Ralos e canaletas</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-box"></i> Guarde Recipientes</h3>
+                        <p>Coloque baldes, garrafas e latas vazias em local coberto ou de cabeça para baixo.</p>
+                        <div class="tip-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Dica: Use uma caixa fechada para guardar recipientes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-lock"></i> Feche a Caixa D'água</h3>
+                        <p>A caixa d'água deve estar sempre fechada e bem vedada. Verifique regularmente o estado da tampa.</p>
+                        <div class="tip-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Dica: Use tela de proteção nas aberturas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-broom"></i> Limpe Calhas</h3>
+                        <p>Mantenha as calhas de telhado limpas e sem entupimentos para evitar acúmulo de água.</p>
+                        <div class="tip-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Dica: Faça limpeza mensal antes da estação chuvosa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-leaf"></i> Cuide das Plantas</h3>
+                        <p>Lave vasos com água e escova regularmente. Use terra seca em vez de manter prato com água.</p>
+                        <div class="tip-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Dica: Coloque os vasos em local bem ventilado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-window-maximize"></i> Use Telas</h3>
+                        <p>Instale telas de proteção em janelas e portas para impedir a entrada de mosquitos.</p>
+                        <div class="tip-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Dica: Verifique furos nas telas regularmente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== CHECKLIST SEMANAL ============== -->
+    <section class="secao checklist-section">
+        <div class="container">
+            <div class="checklist-card">
+                <div class="checklist-header">
+                    <h2><i class="fas fa-clipboard-check"></i> Checklist Semanal</h2>
+                    <p>Acompanhe sua rotina de prevenção</p>
+                </div>
+                <div class="weekly-checklist">
+                    <div class="day">
+                        <h4><i class="fas fa-calendar-day"></i> Segunda</h4>
+                        <label><input type="checkbox"> Inspecionar quintal</label>
+                    </div>
+                    <div class="day">
+                        <h4><i class="fas fa-calendar-day"></i> Terça</h4>
+                        <label><input type="checkbox"> Verificar vasos</label>
+                    </div>
+                    <div class="day">
+                        <h4><i class="fas fa-calendar-day"></i> Quarta</h4>
+                        <label><input type="checkbox"> Limpar ralos</label>
+                    </div>
+                    <div class="day">
+                        <h4><i class="fas fa-calendar-day"></i> Quinta</h4>
+                        <label><input type="checkbox"> Verificar caixa d'água</label>
+                    </div>
+                    <div class="day">
+                        <h4><i class="fas fa-calendar-day"></i> Sexta</h4>
+                        <label><input type="checkbox"> Guardar recipientes</label>
+                    </div>
+                    <div class="day">
+                        <h4><i class="fas fa-calendar-day"></i> Sábado</h4>
+                        <label><input type="checkbox"> Inspeção geral</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== EMERGÊNCIA ============== -->
+    <section class="secao secao-emergencia">
+        <div class="container">
+            <div class="emergency-alert">
+                <div class="alert-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="alert-content">
+                    <h2>Se Você Tiver Sintomas</h2>
+                    <p>Se apresentar <strong>febre alta, dores no corpo ou atrás dos olhos</strong>, procure imediatamente atendimento médico.</p>
+                    <div class="alert-buttons">
+                        <button class="btn-emergency" onclick="alert('SAMU: 192\nPronto-Socorro Mais Próximo')">
+                            <i class="fas fa-ambulance"></i> Chamar SAMU (192)
+                        </button>
+                        <button class="btn-info">
+                            <i class="fas fa-hospital"></i> Encontrar Hospital
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== DICAS EXTRAS ============== -->
+    <section class="secao dicas-extras">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dicas Extras</h2>
+                <p>Recomendações adicionais para máxima proteção</p>
+            </div>
+            <div class="dicas-grid">
+                <div class="dica-card">
+                    <div class="dica-icon"><i class="fas fa-users"></i></div>
+                    <h4>Envolva a Comunidade</h4>
+                    <p>Compartilhe informações com vizinhos e organize ações comunitárias de prevenção.</p>
+                </div>
+                <div class="dica-card">
+                    <div class="dica-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h4>Rotina Consistente</h4>
+                    <p>Mantenha uma rotina regular de inspeção e limpeza em sua casa.</p>
+                </div>
+                <div class="dica-card">
+                    <div class="dica-icon"><i class="fas fa-family"></i></div>
+                    <h4>Conscientize a Família</h4>
+                    <p>Todos devem conhecer os riscos e participar ativamente da prevenção.</p>
+                </div>
+                <div class="dica-card">
+                    <div class="dica-icon"><i class="fas fa-info-circle"></i></div>
+                    <h4>Fique Informado</h4>
+                    <p>Acompanhe boletins de saúde e campanhas de prevenção em sua região.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== CONTATO ============== -->
+    <section id="contato" class="secao secao-contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Dúvidas? Fale conosco</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>SAMU: <strong>192</strong></p>
+                            <p>Secretaria de Saúde: Consulte seu município</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Unidades de Saúde</h4>
+                            <p>Visite a unidade de saúde mais próxima para informações adicionais</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Recursos Online</h4>
+                            <p>Acesse o site da Secretaria de Saúde do Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Dengue Alert - Prevenção é o melhor remédio!</p>
-            <p>Saúde Pública em Foco</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-mosquito"></i> Dengue Alert</h4>
+                    <p>Prevenção é o melhor remédio contra a dengue</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Dengue</a></li>
+                        <li><a href="#riscos">Locais de Risco</a></li>
+                        <li><a href="#prevencao">Prevenção</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Saúde Brasil</a></li>
+                        <li><a href="#">WHO - Dengue</a></li>
+                        <li><a href="#">Vigilância Epidemiológica</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dengue Alert. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> para a saúde pública</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
